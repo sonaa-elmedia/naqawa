@@ -93,7 +93,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 img.ph { width: 100%; height: auto; object-fit: cover; }
 picture { display: block; }
-.ph--hero { object-position: 45% center; }
 .ph__label {
   position: absolute; bottom: 14px; inset-inline-start: 14px; z-index: 1;
   font-size: 13px; color: rgba(255,255,255,.75);
@@ -115,7 +114,7 @@ picture { display: block; }
 .hero__points { display: flex; flex-wrap: wrap; gap: 8px 22px; color: var(--navy); font-weight: 500; font-size: 15px; }
 
 .hero__media { position: relative; }
-.ph--hero { aspect-ratio: 4 / 4.4; border-radius: 28px; box-shadow: var(--shadow-lg); }
+.ph--hero { aspect-ratio: 1 / 1; border-radius: 28px; box-shadow: var(--shadow-lg); }
 .float-card {
   position: absolute; display: flex; align-items: center; gap: 12px;
   background: var(--surface); padding: 12px 18px; border-radius: 16px;
@@ -156,7 +155,7 @@ picture { display: block; }
 /* ===== Occasions ===== */
 .occasions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .occ { position: relative; display: block; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.ph--occ { aspect-ratio: 4 / 5; border-radius: 0; transition: transform .4s ease; }
+.ph--occ { aspect-ratio: 1 / 1; border-radius: 0; transition: transform .4s ease; }
 .occ:hover .ph--occ { transform: scale(1.04); }
 .occ__body {
   position: absolute; inset: auto 0 0 0; padding: 60px 18px 18px;
@@ -204,7 +203,7 @@ picture { display: block; }
 /* ===== Why ===== */
 .why { display: grid; grid-template-columns: 1fr 340px 1fr; gap: 28px; align-items: center; }
 .why__col { display: grid; gap: 20px; }
-.ph--why { aspect-ratio: 3 / 4; border-radius: 26px; box-shadow: var(--shadow-lg); }
+.ph--why { aspect-ratio: 1 / 1; border-radius: 26px; box-shadow: var(--shadow-lg); }
 .feature {
   display: flex; gap: 14px; align-items: flex-start;
   background: var(--surface); border: 1px solid var(--line);
@@ -326,7 +325,6 @@ picture { display: block; }
   .occasions { grid-template-columns: repeat(2, 1fr); }
   .why { grid-template-columns: 1fr 1fr; }
   .why__media { grid-column: 1 / -1; order: -1; max-width: 420px; margin: 0 auto; width: 100%; }
-  .ph--why { aspect-ratio: 16 / 10; }
   .benefits { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -337,7 +335,6 @@ picture { display: block; }
   .hero__text { text-align: center; }
   .lead { margin-inline: auto; }
   .hero__cta, .hero__points { justify-content: center; }
-  .ph--hero { aspect-ratio: 4 / 3.4; }
   .ph--hero .ph__label { bottom: auto; top: 50%; inset-inline-start: 50%; transform: translate(50%, -50%); white-space: nowrap; }
   .float-card--top { inset-inline-end: 10px; top: -14px; }
   .float-card--bottom { inset-inline-start: 10px; bottom: -14px; }
@@ -365,10 +362,9 @@ picture { display: block; }
   .hero__cta .btn { flex: 1 1 100%; }
   .wa-float { display: none; }
   /* Mobile images: landscape crops, no overlap */
-  .ph--hero { aspect-ratio: 16 / 10; border-radius: 22px; object-position: center; }
+  .ph--hero { border-radius: 22px; }
   .ph--hero .ph__label { display: none; }
   .float-card { display: none; }
-  .ph--why { aspect-ratio: 3 / 2; object-position: center; }
   .why__media { max-width: none; }
   .occasions {
     display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
@@ -376,7 +372,6 @@ picture { display: block; }
   }
   .occasions::-webkit-scrollbar { display: none; }
   .occ { flex: 0 0 80%; scroll-snap-align: center; }
-  .ph--occ { aspect-ratio: 4 / 3; }
   .occ__body { padding: 48px 16px 14px; }
   .occ__body h3 { font-size: 18px; }
   .occ__body span { font-size: 13px; }
