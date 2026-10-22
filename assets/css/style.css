@@ -91,6 +91,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   background: url("../img/logo-white.svg") center / 46% no-repeat;
   opacity: .08;
 }
+img.ph { width: 100%; height: auto; object-fit: cover; }
+.ph--hero { object-position: 45% center; }
 .ph__label {
   position: absolute; bottom: 14px; inset-inline-start: 14px; z-index: 1;
   font-size: 13px; color: rgba(255,255,255,.75);
@@ -153,7 +155,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* ===== Occasions ===== */
 .occasions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .occ { position: relative; display: block; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.ph--occ { aspect-ratio: 3 / 4; border-radius: 0; transition: transform .4s ease; }
+.ph--occ { aspect-ratio: 4 / 5; border-radius: 0; transition: transform .4s ease; }
 .occ:hover .ph--occ { transform: scale(1.04); }
 .occ__body {
   position: absolute; inset: auto 0 0 0; padding: 60px 18px 18px;
