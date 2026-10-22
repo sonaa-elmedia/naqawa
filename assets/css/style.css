@@ -345,7 +345,7 @@ picture { display: block; }
 @media (max-width: 640px) {
   body { font-size: 16px; padding-bottom: 78px; }
   .container { padding-inline: 16px; }
-  .header__inner { height: 64px; }
+  .header__inner { height: 64px; justify-content: center; }
   .header__logo img { height: 38px; }
   .header .btn { display: none; }
   .section { padding: 64px 0; }
